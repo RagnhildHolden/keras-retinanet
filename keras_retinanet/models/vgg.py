@@ -36,7 +36,8 @@ class VGGBackbone(Backbone):
         Weights can be downloaded at https://github.com/fizyr/keras-models/releases .
         """
         if self.backbone == 'vgg16':
-            resource = keras.applications.vgg16.vgg16.WEIGHTS_PATH_NO_TOP
+            #resource = keras.applications.vgg16.vgg16.WEIGHTS_PATH_NO_TOP
+            resource = 'https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5'
             checksum = '6d6bbae143d832006294945121d1f1fc'
         elif self.backbone == 'vgg19':
             resource = keras.applications.vgg19.vgg19.WEIGHTS_PATH_NO_TOP
